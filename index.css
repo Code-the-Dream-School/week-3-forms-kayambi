@@ -6,3 +6,11 @@ body{
 
   background-color:black;
 }
+.submit-reserve{
+  display:block;
+}
+.send-btn {
+  flex-direction: center;
+  align-content: center;
+
+}
