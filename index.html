@@ -91,29 +91,29 @@
         <hr>  
 
         <!-- Starting Date Calendar form -->
-
         <div class="form-group mb-3">
           <div class ="input-group-prepend">
             <span class="input-group-text"><i class="fa fa-calendar"></i></span>
-            <input class="form-control" type="date" value="dd/mm/yyyy" id="example-date-input">
+            <input class="form-control" type="date" value="dd-MM-2020" id="Calendar">
           </div> 
         </div> 
         <hr> 
         <!-- Time and Person Forms should be on the same line  -->
         <div class="row">
-       <div class="form-group col-4">
+       <div class="form-group col-5">
           <div class ="input-group-prepend">
             <span class="input-group-text"><i class="fa fa-clock-o"></i></span>
             <select class="form-control text-sm-center"id="timeNum"></select>
-            
           </div> 
       </div> 
         <hr> 
         <!-- Input Person  -->
         <div class="form-group col-6">
           <div class ="input-group-prepend">
-            <span class="input-group-text"><i class="fa fa-person"></i></span>
-      <select class="form-control text-sm-center" id="Number">
+            <span class="input-group-text"><i class="fas fa-user-plus"  style='font-size:16px'></i></span>
+
+            
+      <select class="form-control text-center" id="Number">
       </select>
     </div>    
       </div>
@@ -121,19 +121,14 @@
 </form>
       <hr>
       <div class= text-sm-center>
-        <button type="submit" class="btn btn-primary">Send</button>
+        <button type="submit" class="btn btn-primary">Reserve</button>
       </div>
   </div> 
-
     <hr>
   </div>  
  </div>
 </div> 
-
-
       <!-- END OF RESERVATION FORM  -->
-   
-
          <!-- APPLICATION FORM Modal--->
 
          <div class="modal fade" id="application" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
@@ -164,7 +159,7 @@
           <div class="col">
             <label for="example-tel-input" class="col-2 col-form-label">Phone</label>
             <div class="col-10">
-              <input class="form-control" type="text"  minlength="0" maxlength ="10" value="1234567890" id="example-tel-input">
+              <input class="form-control" type="text"  minlength="0" maxlength ="10" value="Format:1234567890" id="example-tel-input">
             </div>
             </div>
           </div>
@@ -175,7 +170,16 @@
           <select class="form-control" id="Number">
             <option value="1">Data Engineer</option>
             <option value="2">Data Scientist</option>
-            <option value="3">Data Analyst</option>
+            <option value="4">Data Analyst</option>
+            <option value="5">Software Engiineer</option>
+            <option value="6">Web Developer</option>
+            <option value="7"> DataBase Engineer </option>
+            <option value="8">Senior Financial Analyst</option>
+            <option value="9">IOS Developer</option>
+            <option value="10">Business Analyst</option>
+            <option value="11">Tech Recruiter</option>
+            <option value="12">Diversity Inclusion Manager</option>
+            <option value="13">Hiring Manager</option>
           </select>
         </div>
          <hr>
