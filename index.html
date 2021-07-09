@@ -4,13 +4,226 @@
     <meta charset="utf-8">
     <title>Forms</title>
     <!-- Bootstrap CSS -->
+  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
     <link href= "index.css" rel="stylesheet"></link>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+
   </head>
   <body>
+    <!-- Jumborton-->
+    <!-- form Templates title-->
+    <div class="form">
+      <div class="jumbotron jumbotron-fluid p-3 mb-2 bg-dark text-white ">
+        <div class="container text-sm-center pt-6">
+          <h1 class="display-2">Form Templates</h1>
+          <hr>
+    
+      <!-- Reservation and Application buttons  goes here -->
+
+          <div class="btn-group" role="group" aria-label="Callout buttons">
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                data-target="#register">Reserve</button>
+          <hr>
+          </div>
+          <div class="btn-group mt-8" role="group" aria-label="Callout buttons">
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                data-target="#application">Application</button>                            
+          </div>
+         
+        </div>
+     
+      </div>
+    </div>
+
+    <!--Form Modal-->
+
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+        <!--  Registration form goes here -->  
 
 
-    <script type="text/javascript" src="weather.js"></script>
+      <div class="modal-body">
+      <form>
+        <h5 class="mb-4">Reservation</h5>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name">
+            </div>
+          </div>
+         <hr>
+
+         <!-- End of Registraation First and Last Name -->
+         <!-- Start of Phone Number form -->
+
+     
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text fa fa-phone" id="basic-addon1"></span>
+          </div>
+
+          <input type="tel"   class="form-control"  placeholder="Format:1234567890"   id="phone" name="phone" aria-describedby="basic-addon1" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
+        </div>
+        <hr>
+           <!-- Start of Email Address Form -->
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-envelope-o fa-fw"></i></span>
+          </div>
+          <input type="text" class="form-control" placeholder="name@example.com" aria-label="email" aria-describedby="basic-addon1">
+        </div>
+        <hr>  
+
+        <!-- Starting Date Calendar form -->
+        <div class="form-group mb-3">
+          <div class ="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+            <input class="form-control" type="date" value="dd-MM-2020" id="Calendar">
+          </div> 
+        </div> 
+        <hr> 
+        <!-- Time and Person Forms should be on the same line  -->
+        <div class="row">
+       <div class="form-group col-5">
+          <div class ="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-clock-o"></i></span>
+            <select class="form-control text-sm-center"id="timeNum"></select>
+          </div> 
+      </div> 
+        <hr> 
+        <!-- Input Person  -->
+        <div class="form-group col-6">
+          <div class ="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-user-plus"  style='font-size:16px'></i></span>
+
+            
+      <select class="form-control text-center" id="Number">
+      </select>
+    </div>    
+      </div>
+      </div>     
+</form>
+      <hr>
+      <div class= text-sm-center>
+        <button type="submit" class="btn btn-primary">Reserve</button>
+      </div>
+  </div> 
+    <hr>
+  </div>  
+ </div>
+</div> 
+      <!-- END OF RESERVATION FORM  -->
+         <!-- APPLICATION FORM Modal--->
+
+         <div class="modal fade" id="application" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+          <div class="modal-content">
+          <div class="modal-header">
+       <div class= "modal-body">
+        <form clas="">
+          <h5 class="mb-4">We are happy that you want to be part of our team</h5>
+          <form>
+            <div class="row">
+              <div class="col"> 
+              
+                <input type="text" class="form-control" label="First Name" placeholder="First Name">
+              
+              </div>
+              <div class="col">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </form>
+          <div class="row">
+          <div class="col">
+            <label for="exampleInputEmail1">Email address </label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example">
+            <small id="emailHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="col">
+            <label for="example-tel-input" class="col-2 col-form-label">Phone</label>
+            <div class="col-10">
+              <input class="form-control" type="text"  minlength="0" maxlength ="10" value="Format:1234567890" id="example-tel-input">
+            </div>
+            </div>
+          </div>
+          <div class="col">
+
+          <label  for="">Position Applied</label>    
+          <!-- I will try using a for loop to loop through my list-->
+          <select class="form-control" id="Number">
+            <option value="1">Data Engineer</option>
+            <option value="2">Data Scientist</option>
+            <option value="4">Data Analyst</option>
+            <option value="5">Software Engiineer</option>
+            <option value="6">Web Developer</option>
+            <option value="7"> DataBase Engineer </option>
+            <option value="8">Senior Financial Analyst</option>
+            <option value="9">IOS Developer</option>
+            <option value="10">Business Analyst</option>
+            <option value="11">Tech Recruiter</option>
+            <option value="12">Diversity Inclusion Manager</option>
+            <option value="13">Hiring Manager</option>
+          </select>
+        </div>
+         <hr>
+
+           <!-- Start Taggle Radio for Full-Time and Part Time option -->
+        <div>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio1">Full-Time</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio2">Part-Time</label>
+        </div>
+        </div>
+           <!-- End Taggle Radio for Full-Time and Part Time option -->
+        <hr>
+        <!-- Comment Section -->
+    
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">What are your work place skills ?</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <hr> 
+
+        <!-- End of Comment Section -->
+
+        <!-- Uploading section -->
+        <label for="exampleFormControlTextarea1">Upload your resume and list of references:</label>
+        <div class="input-group mb-3">
+          
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="inputGroupFile02">
+            <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+          </div>
+          <div class="input-group-append">
+            <span class="input-group-text" id="">Upload</span>
+          </div>
+        </div>
+
+          <button type="submit" class="btn btn-primary">Send</button>   
+        </form>
+      </div>
+    </div>
+    <script src="test.js"></script>
   </body>
 </html>

@@ -2,3 +2,19 @@ body{
   margin: 0;
   padding: 0;
 }
+.form {
+
+  background-color:black;
+}
+.submit-reserve{
+  display:block;
+}
+.send-btn {
+  flex-direction: center;
+  align-content: center;
+
+}
+.person {
+  display: flexbox;
+}
+
